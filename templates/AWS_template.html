@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Cloud Club - Acceptance</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0; padding: 0; background-color: #000000; font-family: 'IBM Plex Sans Arabic', Arial, sans-serif; direction: rtl;">
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; background-color: #000000;">
+        <tr>
+            <td align="center" style="padding: 40px 10px;">
+                
+                <table border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: #232F3E; border-left: 4px solid #FF9900; border-right: 4px solid #FF9900; overflow: hidden; box-shadow: 0 0 20px rgba(255, 153, 0, 0.1);">
+                    
+                    <tr>
+                        <td style="background-color: #1A222D; padding: 20px 40px; border-bottom: 1px solid #3f4d5e;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td align="right" width="50%">
+                                        <h2 style="color: #ffffff; margin: 0; font-size: 20px; font-weight: 700; letter-spacing: 1px;">AWS <span style="color: #FF9900;">Cloud Club</span></h2>
+                                    </td>
+                                    <td align="left" width="50%">
+                                        <span style="color: #879596; font-size: 12px; font-family: 'Fira Code', monospace;" dir="ltr">REGION: me-south-1 (KSU)</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 30px 40px 10px 40px;">
+                            <div style="background-color: #0f1519; border: 1px solid #3f4d5e; border-radius: 6px; padding: 15px; direction: ltr; text-align: left;">
+                                <p style="margin: 0; color: #879596; font-family: 'Fira Code', monospace; font-size: 13px;">
+                                    <span style="color: #FF9900;">$</span> aws iam create-user --user-name "{{NAME}}"
+                                </p>
+                                <pre style="margin: 10px 0 0 0; color: #00ff00; font-family: 'Fira Code', monospace; font-size: 13px; line-height: 1.5;">
+{
+    "User": {
+        "Path": "/ksu/aws-club/members/",
+        "UserName": "{{NAME}}",
+        "Role": "{{ROLE}}",
+        "Status": "PROVISIONED",
+        "AccessLevel": "Elevated"
+    }
+}
+                                </pre>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="right" style="padding: 20px 40px 10px 40px;">
+                            <h1 style="color: #ffffff; margin: 0; font-size: 26px; font-weight: 700;">
+                                مرحبًا بك في السحابة.
+                            </h1>
+                            <p style="color: #d5dbdb; margin: 15px 0 0 0; font-size: 16px; line-height: 1.6;">
+                                تمت الموافقة على طلبك بنجاح. بصفتك <strong>{{ROLE}}</strong>، تم منحك صلاحيات الدخول إلى بيئة التطوير الخاصة بالنادي.
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="right" style="padding: 20px 40px;">
+                            <p style="color: #879596; font-size: 14px; margin: 0 0 15px 0; font-weight: 700;">Resource Tags (السمات):</p>
+                            
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" dir="ltr">
+                                <tr>
+                                    <td width="33%" style="padding-right: 10px;">
+                                        <div style="background-color: #1A222D; border: 1px solid #FF9900; border-radius: 4px; padding: 5px 10px;">
+                                            <span style="color: #879596; font-size: 11px; display: block;">Key: Availability</span>
+                                            <span style="color: #ffffff; font-size: 14px; font-weight: bold; display: block; text-align: right;" dir="rtl">عالي التوافر</span>
+                                        </div>
+                                    </td>
+                                    <td width="33%" style="padding-right: 10px;">
+                                        <div style="background-color: #1A222D; border: 1px solid #FF9900; border-radius: 4px; padding: 5px 10px;">
+                                            <span style="color: #879596; font-size: 11px; display: block;">Key: Architecture</span>
+                                            <span style="color: #ffffff; font-size: 14px; font-weight: bold; display: block; text-align: right;" dir="rtl">قابل للتوسع</span>
+                                        </div>
+                                    </td>
+                                    <td width="33%">
+                                        <div style="background-color: #1A222D; border: 1px solid #FF9900; border-radius: 4px; padding: 5px 10px;">
+                                            <span style="color: #879596; font-size: 11px; display: block;">Key: Performance</span>
+                                            <span style="color: #ffffff; font-size: 14px; font-weight: bold; display: block; text-align: right;" dir="rtl">مُحسّن</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" style="padding: 30px 40px 40px 40px; border-top: 1px solid #3f4d5e; background-color: #1A222D; margin-top: 20px;">
+                            <p style="color: #FF9900; margin: 0; font-size: 16px; font-weight: 700; font-family: 'Fira Code', monospace;" dir="ltr">
+                                > INIT_CONNECTION
+                            </p>
+                            <p style="color: #879596; margin: 5px 0 0 0; font-size: 12px;" dir="ltr">
+                                College of Computer and Information Sciences (CCIS)
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
