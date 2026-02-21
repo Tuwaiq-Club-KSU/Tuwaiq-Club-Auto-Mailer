@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نادي طويق - مسار الذكاء الاصطناعي</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=Fira+Code:wght@400;500&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0; padding: 0; background-color: #1A1917; font-family: 'IBM Plex Sans Arabic', Arial, sans-serif; direction: rtl;">
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; background-color: #1A1917;">
+        <tr>
+            <td align="center" style="padding: 40px 10px;">
+                
+                <table border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: #242320; border: 1px solid #363532; border-radius: 12px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,0.3);">
+                    
+                    <tr>
+                        <td style="padding: 35px 45px 15px 45px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td align="right" width="50%">
+                                        <img src="https://raw.githubusercontent.com/Tuwaiq-Club-KSU/Tuwaiq-Club-Auto-Mailer/blob/main/images/hero-BRC2wPjs.png" alt="Tuwaiq Club" style="display: block; max-height: 32px; opacity: 0.9;">
+                                    </td>
+                                    <td align="left" width="50%">
+                                        <img src="https://raw.githubusercontent.com/Tuwaiq-Club-KSU/Tuwaiq-Club-Auto-Mailer/blob/main/images/ccis_-_trans_-_en.png" alt="CCIS" style="display: block; max-height: 32px; opacity: 0.8;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="right" style="padding: 10px 45px 25px 45px;">
+                            <p style="color: #DA7756; margin: 0 0 5px 0; font-family: 'Lora', serif; font-style: italic; font-size: 16px; letter-spacing: 0.5px;" dir="ltr">
+                                Model initialized.
+                            </p>
+                            <h1 style="color: #E8E7E2; margin: 0; font-size: 28px; font-weight: 700;">
+                                أهلاً بك، {{NAME}}
+                            </h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 0 45px 25px 45px;" dir="ltr">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #1B1A18; border: 1px solid #363532; border-radius: 8px; overflow: hidden;">
+                                <tr>
+                                    <td style="background-color: #2A2926; padding: 8px 15px; border-bottom: 1px solid #363532;">
+                                        <span style="color: #9C9B96; font-family: 'Fira Code', monospace; font-size: 11px;">
+                                            pytorch_env_setup.log
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 15px;">
+                                        <pre style="margin: 0; color: #C4C3BE; font-family: 'Fira Code', monospace; font-size: 12px; line-height: 1.6;">
+<span style="color: #9C9B96;"># Initializing compute resources...</span>
+<span style="color: #DA7756;">import</span> torch.distributed <span style="color: #DA7756;">as</span> dist
+
+dist.<span style="color: #E8E7E2;">init_process_group</span>(
+    backend=<span style="color: #89B482;">'nccl'</span>,
+    world_size=<span style="color: #D3869B;">128</span>,
+    init_method=<span style="color: #89B482;">'env://'</span>
+)
+
+<span style="color: #9C9B96;">[CUDA INFO] Found 8x NVIDIA A100-SXM4-80GB</span>
+<span style="color: #9C9B96;">[MEM ALLOC] 640GB VRAM Pool Active</span>
+
+DistributedDataParallel(
+  (module): TuwaiqAI_Club(
+    (member): Node(name=<span style="color: #89B482;">"{{NAME}}"</span>, role=<span style="color: #89B482;">"{{ROLE}}"</span>)
+    (track) : <span style="color: #89B482;">"{{TRACK}}"</span>
+  )
+  device_ids=[<span style="color: #D3869B;">0</span>, <span style="color: #D3869B;">1</span>, <span style="color: #D3869B;">2</span>, <span style="color: #D3869B;">3</span>, <span style="color: #D3869B;">4</span>, <span style="color: #D3869B;">5</span>, <span style="color: #D3869B;">6</span>, <span style="color: #D3869B;">7</span>]
+  output_device=<span style="color: #D3869B;">0</span>
+)
+<span style="color: #9C9B96;"># Weights converged. Inference ready.</span></pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="right" style="padding: 0 45px 30px 45px;">
+                            <p style="color: #C4C3BE; margin: 0 0 15px 0; font-size: 16px; line-height: 1.8;">
+                                بناءً على المعطيات والتحليلات، يسعدني إبلاغك بقبول انضمامك رسمياً إلى الشبكة الخاصة بنا. بصفتك <strong style="color: #DA7756; font-weight: 500;">{{ROLE}}</strong> في مسار <strong style="color: #E8E7E2; font-weight: 500;">{{TRACK}}</strong>، تم منحك صلاحيات الوصول للموارد والبنية التحتية.
+                            </p>
+                            <p style="color: #C4C3BE; margin: 0; font-size: 16px; line-height: 1.8;">
+                                نحن هنا لتدريب نماذج تصنع الفارق، وأنت الآن جزء من هذا التطور. 
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 20px 45px; border-top: 1px solid #363532; background-color: #21201D;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td align="right" width="50%">
+                                        <p style="color: #9C9B96; margin: 0; font-size: 12px; font-family: 'IBM Plex Sans Arabic', sans-serif;">
+                                            إدارة مسار الذكاء الاصطناعي
+                                        </p>
+                                    </td>
+                                    <td align="left" width="50%" style="text-align: left;">
+                                        <p style="color: #DA7756; margin: 0; font-size: 11px; font-family: 'Fira Code', monospace; letter-spacing: 0.5px;" dir="ltr">
+                                            v.2026.1 // KSU
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+                
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
